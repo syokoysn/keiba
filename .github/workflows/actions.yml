@@ -1,0 +1,16 @@
+name: Scheduled build
+
+on:
+  schedule:
+    # 月曜日の 11:00 (JST) に処理を実行する。
+    # UTC の 02:00 は JST だと 11:00 。
+    - cron: '00 * * * *'
+  
+
+jobs:
+  build:
+    name: test job
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo 'Hello'
