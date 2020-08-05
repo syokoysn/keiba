@@ -14,4 +14,4 @@ jobs:
       - name: hello
         run: echo 'Hello' 
       - name: time
-        run: echo '%date% %time%'
+        run: echo `%date% %time%`
