@@ -1,4 +1,4 @@
-name: Scheduled build
+name: crawl action
 
 on:
   schedule:
